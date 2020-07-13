@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Date Format</title>
+</head>
+<body>
+
+<p>mm-dd-yyyy : <span id="d1"></span></p>
+<p>mm/dd/yyyy : <span id="d2"></span></p>
+<p>dd-mm-yyyy : <span id="d3"></span></p>
+<p>dd/mm/yyyy : <span id="d4"></span></p>
+
+<script>
+var d = new Date();
+var dd= d.getDate();
+var mm= d.getMonth();
+var yy= d.getFullYear();
+var strdate1 = mm+'-'+ dd + '-' + yy ;
+var strdate2 = mm+'/'+ dd + '/' + yy ;
+var strdate3 = dd+'-'+ mm + '-' + yy ;
+var strdate4 = dd+'/'+ mm + '/' + yy ;
+
+document.getElementById("d1").innerHTML = strdate1 ;
+document.getElementById("d2").innerHTML = strdate2 ;
+document.getElementById("d3").innerHTML = strdate3 ;
+document.getElementById("d4").innerHTML = strdate4 ;
+
+</script>
+
+</body>
+</html>
